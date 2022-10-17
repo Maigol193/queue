@@ -43,9 +43,11 @@ int queue_empty(Queue *q){
     return 1;
 }
 
+
 int queue_peek(Queue *q){
     return q->head->value;
 }
+
 
 int queue_remove(Queue *q){
     int a = q->head->value;

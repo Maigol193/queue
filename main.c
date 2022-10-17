@@ -6,10 +6,9 @@ int main() {
     queue_append(q, i);
   while(!queue_empty(q))
   {
-    if(queue_peek(q) % 2 == 0)
-      queue_remove(q);
-    else
-      printf("%d ", queue_remove(q));
+      int a = queue_remove(q);
+      if(a % 2 != 0)
+        printf("%d ", a);
   }
   return 0;
 }
